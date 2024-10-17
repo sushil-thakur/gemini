@@ -61,5 +61,17 @@ body{
     
 }
 .suggeston-list .suggestion .text{
+    font-weight: 400;
     
+}
+.suggeston-list .suggestion .icon{
+    height: 42px;
+    width: 42px;
+    font-size: 1.3rem;
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--primary-color);
 }
