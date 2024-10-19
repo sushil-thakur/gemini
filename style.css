@@ -23,6 +23,10 @@ body {
 .typing-area {
     color: var(--text-color);
 }
+.header, .typing-form {
+  max-width: 1000px;
+  margin: 0 auto;
+}
 
 .header {
     margin-top: 7vh;
