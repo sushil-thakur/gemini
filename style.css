@@ -242,4 +242,8 @@ body {
     margin-top: 1rem;
     text-align: center;
 }
-
+.chat-list .loading-indicator .loading-bar{
+    height: 11px;
+    width: 100%;
+    background: linear-gradient(to right, #4285f4, var(--primary-color),#4285f4);
+}
