@@ -162,7 +162,7 @@ body {
     position: relative;
 }
 
-.typing-area .input {
+.typing-area .typing-input {
     width: calc(100% - 56px);
     height: 56px;
     background: var(--secondary-color);
@@ -176,11 +176,11 @@ body {
     padding-left: 1.5rem;
 }
 
-.typing-area .input:focus {
+.typing-area .typing-input:focus {
     background: var(--secondary-hover-color);
 }
 
-.typing-area .input::placeholder {
+.typing-area .typing-input::placeholder {
     color: var(--placeholder-color);
 }
 

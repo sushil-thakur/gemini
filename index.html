@@ -39,37 +39,17 @@
         </ul>
     </header>
     <div class="chat-list">
-        <div class="message outgoing">
-            <div class="message-content">
-                <img src="image/user.png" alt="User Image" class="avatar">
-                <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis molestiae eius maiores temporibus, fugit rem, voluptatibus sint vel dolor non corporis atque assumenda enim! Earum
-                     commodi vero fugit id officiis.</p>
-            </div>
-        </div>
-        <div class="message incoming">
-            <div class="message-content">
-                <img src="image/gemini.svg" alt="Gemini Image" class="avatar">
-                <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis molestiae eius maiores temporibus, fugit rem, voluptatibus sint vel dolor non corporis atque assumenda enim! Earum
-                     commodi vero fugit id officiis.</p>
-                     <div class="loading-indicator">
-                        <div class="loading-bar"></div>
-                        <div class="loading-bar"></div>
-                        <div class="loading-bar"></div>
-                     </div>
-            </div>
-            <span class="icon material-symbols-rounded">content_copy</span>
-        </div>
-
-
-    </div>
+        
 
     <div class="typing-area">
-        <div class="input-wrapper">
-            <input type="text" class="input" placeholder="Enter a prompt here" required>
-            <div class="send-button">
-                <span class="material-symbols-rounded">send</span>
+        <form class="typing-form">
+            <div class="input-wrapper">
+                <input type="text" class="typing-input" placeholder="Enter a prompt here" required>
+                <button type="submit" class="send-button">
+                    <span class="material-symbols-rounded">send</span>
+                </button>
             </div>
-        </div>
+        </form>
 
         <div class="action-buttons">
             <span class="icon material-symbols-rounded">light_mode</span>
