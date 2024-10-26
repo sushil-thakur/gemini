@@ -20,6 +20,9 @@ const handleOutgoingChat = () => {
  const outgoingMessageDiv = createMessageElement(html, "outgoing");
  outgoingMessageDiv.querySelector(".text").innerText = userMessage;
   charlist.appendChild(outgoingMessageDiv); 
+
+  typingForm.reset();
+  setTimeout(showLoadingAnimation, 500);
 }
 
 typingForm.addEventListener("submit", (e) => {
