@@ -9,7 +9,22 @@ const createMessageElement = (content, className) => {
     div.innerHTML = content;
 return div;
 }
+const showLoadingAnimation = () =>{
+    const html = `<div class="message-content">
+    <img src="image/user.png" alt="User Image" class="avatar">
+    <p class="text"></p>
+    <div class="loading-indicator">
+    <div class="loading-bar"></div>
+    <div class="loading-bar"></div>
+    <div class="loading-bar"></div>
+</div>
+</div>
+<span class="icon material-symbols-rounded">content_copy</span>`;
+const incomingMessageDiv = createMessageElement(html, "outgoing", "loading");
+outgoingMessageDiv.querySelector(".text").innerText = userMessage;
+charlist.appendChild(outgoingMessageDiv); 
 
+}
 const handleOutgoingChat = () => {
     userMessage = typingForm.querySelector(".typing-input").value.trim();
     if(!userMessage) return;
