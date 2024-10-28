@@ -2,9 +2,9 @@ const typingForm = document.querySelector(".typing-form");
 const chatList= document.querySelector(".chat-list");
 
 let userMessage = null;
-const createMessageElement = (content, className) => {
+const createMessageElement = (content, ...classes) => {
     const div = document.createElement("div");
-    div.classList.add("message", className);
+    div.classList.add("message", ...classes);
 
     div.innerHTML = content;
 return div;
