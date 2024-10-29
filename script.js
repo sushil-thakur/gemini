@@ -2,12 +2,17 @@ const typingForm = document.querySelector(".typing-form");
 const chatList= document.querySelector(".chat-list");
 
 let userMessage = null;
+const API_KEY = "AIzaSyBc_c4CW304RTeNpdYQT_F7kwTR2e_Hl1Y"
+const API_URL =` 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=YOUR_API_KEY'`;
 const createMessageElement = (content, ...classes) => {
     const div = document.createElement("div");
     div.classList.add("message", ...classes);
 
     div.innerHTML = content;
 return div;
+}
+const generateAPIResponse =() => {
+
 }
 const showLoadingAnimation = () =>{
     const html = `<div class="message-content">
@@ -23,6 +28,8 @@ const showLoadingAnimation = () =>{
 const incomingMessageDiv = createMessageElement(html, "outgoing", "loading");
 outgoingMessageDiv.querySelector(".text").innerText = userMessage;
 charlist.appendChild(outgoingMessageDiv); 
+
+generateAPIResponse();
 
 }
 const handleOutgoingChat = () => {
