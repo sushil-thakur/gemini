@@ -11,7 +11,13 @@ const createMessageElement = (content, ...classes) => {
     div.innerHTML = content;
 return div;
 }
-const generateAPIResponse =() => {
+const generateAPIResponse = async() => {
+    try{
+        const response = await fetch();
+
+    }catch(error){
+        console.error(error);
+    }
 
 }
 const showLoadingAnimation = () =>{
